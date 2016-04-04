@@ -90,6 +90,10 @@
         [self handleError:_errorMsg];
     }else {
         NSString *urlStr = [NSString stringWithFormat:@"http://119.29.156.162:8000/signup?username=%@&password=%@&email=%@&phonenumber=%@",_signUpUsername.text,_signUpPassword.text,_email.text,_phoneNumber.text];
+        //在后台线程进行注册请求
+        dispatch_async(dispatch_queue_create("com.terrynie.signup", DISPATCH_QUEUE_CONCURRENT), ^{
+           
+        });
     }
     
 }
