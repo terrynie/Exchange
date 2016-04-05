@@ -9,6 +9,7 @@
 #import "TNAcountController.h"
 
 @interface TNAcountController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *account;
 @property (weak, nonatomic) IBOutlet UITextField *password;
 @property (weak, nonatomic) IBOutlet UILabel *errorInfo;
